@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".CreateRoom">
+
+    <RelativeLayout
+        android:id="@+id/create_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent" >
+        <ImageView
+            android:id="@+id/create_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/create_back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="主页面"
+            android:textColor="#fff"
+            android:textSize="20dp"
+            android:layout_toRightOf="@+id/create_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="20dp"
+            />
+    </RelativeLayout>
+
+    <LinearLayout
+        android:id="@+id/createone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/create_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/createtwo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房间名:"/>
+        <EditText
+            android:id="@+id/createthree"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal">
+        <TextView
+            android:id="@+id/createfour"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房间介绍"/>
+        <EditText
+            android:id="@+id/cretesix"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:maxLines="2"/>
+    </LinearLayout>
+    </LinearLayout>
+    <Button
+        android:id="@+id/createfive"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/createone"
+        android:layout_marginLeft="5dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginRight="5dp"
+        android:background="@drawable/selector_loginactivity_button"
+        android:gravity="center"
+        android:onClick="onClick"
+        android:text="创建房间"
+        android:textColor="#fff" />
+</RelativeLayout>

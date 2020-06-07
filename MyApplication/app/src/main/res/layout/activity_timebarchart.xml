@@ -1,0 +1,71 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <com.github.mikephil.charting.charts.BarChart
+        android:id="@+id/bar_chart"
+        android:layout_width="match_parent"
+        android:layout_height="400dp"
+        android:layout_alignParentBottom="true"/>
+
+    <TextView
+        android:id="@+id/sumTime"
+        android:layout_width="wrap_content"
+        android:layout_height="30dp"
+        android:layout_above="@+id/bar_chart"
+        android:layout_marginBottom="6dp"
+        android:textSize="20sp"
+        android:text="总时长：00时00分" />
+
+    <TextView
+        android:id="@+id/sumCount"
+        android:layout_width="wrap_content"
+        android:layout_height="29dp"
+        android:layout_above="@+id/bar_chart"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:layout_marginEnd="101dp"
+        android:layout_marginRight="101dp"
+        android:layout_marginBottom="0dp"
+        android:gravity="center"
+        android:text="0个"
+        android:textSize="20sp" />
+
+    <Button
+        android:id="@+id/button"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginEnd="7dp"
+        android:textSize="20dp"
+        android:background="@drawable/left_shape"
+        android:layout_marginRight="7dp"
+        android:layout_toStartOf="@+id/button2"
+        android:layout_toLeftOf="@+id/button2"
+        android:text="本周" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:layout_marginEnd="7dp"
+        android:layout_marginRight="7dp"
+        android:textSize="20dp"
+        android:background="@drawable/middle_shape"
+        android:layout_toStartOf="@+id/button3"
+        android:layout_toLeftOf="@+id/button3"
+        android:text="本月" />
+
+    <Button
+        android:id="@+id/button3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentRight="true"
+        android:textSize="20dp"
+        android:background="@drawable/right_shape"
+        android:layout_marginEnd="64dp"
+        android:layout_marginRight="64dp"
+        android:text="本年" />
+
+</RelativeLayout>

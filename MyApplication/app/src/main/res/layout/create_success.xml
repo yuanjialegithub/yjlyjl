@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".CreateSuccess">
+
+    <RelativeLayout
+        android:id="@+id/createsuccess_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent" >
+        <ImageView
+            android:id="@+id/createsuccess_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/createsuccess_back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/createsuccess_back"
+            android:text="主页面"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/creatsuccesseone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/createsuccess_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+    <Button
+        android:id="@+id/createsucccessbutton"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间信息"
+        android:clickable="true"
+        android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/successroomname"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间名:"/>
+    <TextView
+        android:id="@+id/successroomname2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/successroomnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间号:"/>
+    <TextView
+        android:id="@+id/successroomnumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/successroomproduce"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间介绍:"/>
+    <TextView
+        android:id="@+id/successroomproduce2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/successnumber"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间人数:"/>
+    <TextView
+        android:id="@+id/successnumber2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+
+</RelativeLayout>

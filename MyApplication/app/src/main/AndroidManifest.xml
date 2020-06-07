@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.example.myapplication">
+
+    <application
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="Focus"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/Theme.AppCompat.DayNight">
+
+        <activity android:name=".WelComeActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+        <service
+            android:name=".MusicService"
+            android:enabled="true"
+            android:exported="true" />
+
+        <activity
+            android:name=".FocusActivity"
+            android:theme="@style/Theme.AppCompat.DayNight.NoActionBar" />
+        <activity android:name=".MyActivity" />
+
+        <activity
+            android:name=".MainActivity"
+            android:theme="@style/Theme.AppCompat.DayNight">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+
+
+        <activity
+            android:name=".ChangeActivity">
+
+        </activity>
+        <activity
+            android:name=".PlanActivity">
+
+        </activity>
+        <activity
+            android:name=".TodoMainActivity_login">
+
+        </activity>
+        <activity
+            android:name=".AddActivity">
+
+        </activity>
+        <activity
+            android:name=".DakaActivity">
+
+        </activity>
+        <activity
+            android:name=".DakaMainActivity"
+            android:theme="@style/Theme.AppCompat.Dialog">
+
+        </activity>
+        
+        <activity android:name=".RegisterActivity">
+
+        </activity>
+        <activity android:name=".loginActivity">
+
+        </activity>
+        <activity android:name=".CreateRoom">
+
+        </activity>
+        <activity android:name=".CreateSuccess">
+
+        </activity>
+        <activity android:name=".JoinRoom">
+
+        </activity>
+        <activity android:name=".JoinSuccess">
+
+        </activity>
+        <activity android:name=".Myloginactivity">
+
+        </activity>
+        <activity android:name=".AchievementMainActivity">
+
+        </activity>
+        <activity android:name=".PlanActivity_login">
+
+        </activity>
+        <activity android:name=".FocusActivity_login">
+
+        </activity>
+        <activity android:name=".DakaActivity_login">
+
+        </activity>
+        <activity android:name=".MainActivity_login">
+
+        </activity>
+
+    </application>
+
+</manifest>

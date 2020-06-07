@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DakaActivity">
+
+    <include layout="@layout/title"></include>
+
+    <Button
+        android:id="@+id/pbt_1"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:text="添加待办"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn2">
+    </Button>
+    <Button
+        android:id="@+id/pbt_2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pbt_1"
+        android:text="添加待办"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn2">
+    </Button>
+    <Button
+        android:id="@+id/pbt_3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pbt_2"
+        android:text="添加待办"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn2">
+    </Button>
+    <Button
+        android:id="@+id/pbt_4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pbt_3"
+        android:text="添加待办"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn2">
+    </Button>
+    <Button
+        android:id="@+id/pbt_5"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="5dp"
+        android:layout_below="@id/pbt_4"
+        android:text="添加待办"
+        android:textColor="#000"
+        android:textSize="15sp"
+        android:background="@drawable/bg_btn2">
+    </Button>
+
+</RelativeLayout>

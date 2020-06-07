@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:tools="http://schemas.android.com/tools"
+    tools:context=".JoinSuccess">
+
+    <RelativeLayout
+        android:id="@+id/joinsuccess_top"
+        android:layout_width="match_parent"
+        android:layout_height="70dp"
+        android:background="@color/colorAccent" >
+        <ImageView
+            android:id="@+id/joinsuccess_back"
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:background="@drawable/ic_left_back"
+            android:layout_centerVertical="true"
+            android:layout_marginLeft="10dp"
+            android:clickable="true"
+            android:onClick="onClick"
+            />
+
+        <TextView
+            android:id="@+id/joinsuccess_back_main"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="20dp"
+            android:layout_toRightOf="@+id/joinsuccess_back"
+            android:text="主页面"
+            android:layout_centerVertical="true"
+            android:textColor="#fff"
+            android:textSize="20dp" />
+    </RelativeLayout>
+    <LinearLayout
+        android:id="@+id/joinone"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_below="@+id/joinsuccess_top"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="5dp"
+        android:layout_marginRight="5dp"
+        >
+        <Button
+            android:id="@+id/joinsuccessbutton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="房间信息"
+            android:clickable="true"
+            android:onClick="onClick"/>
+    <TextView
+        android:id="@+id/joinsuccess1"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间名:"/>
+    <TextView
+        android:id="@+id/joinsuccess2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/joinsuccess3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间号:"/>
+    <TextView
+        android:id="@+id/joinsuccess4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+
+    <TextView
+        android:id="@+id/joinsuccess5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间介绍:"/>
+    <TextView
+        android:id="@+id/joinsuccsee6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:maxLines="2"/>
+
+    <TextView
+        android:id="@+id/joinsuccess7"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="房间人数:"/>
+    <TextView
+        android:id="@+id/joinsuccess8"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+    </LinearLayout>
+</RelativeLayout>

@@ -1,0 +1,163 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <include layout="@layout/titlelogin"></include>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:id="@+id/rl_1">
+        <ImageView
+            android:id="@+id/back"
+            android:layout_width="match_parent"
+            android:layout_height="200dp"
+            android:background="@drawable/head2"
+            android:alpha="0.3"/>
+
+        <ImageView
+            android:id="@+id/head"
+            android:layout_width="80dp"
+            android:layout_height="80dp"
+            android:src="@drawable/head2"
+            android:layout_centerInParent="true"/>
+
+        <RelativeLayout
+            android:id="@+id/rl_2"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignBottom="@id/back"
+            android:orientation="horizontal"
+            android:layout_marginBottom="20dp">
+
+            <ImageView
+                android:id="@+id/user_line"
+                android:layout_width="1dp"
+                android:layout_height="0dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginLeft="15dp"
+                android:background="#000000" />
+
+            <Button
+                android:id="@+id/user_name"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/user_line"
+                android:layout_marginRight="-17dp"
+                android:textSize="17sp"
+                android:textColor="#000000"
+                android:background="#00000000"
+                android:text="已登录"/>
+
+            <Button
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:id="@+id/bt_logout"
+                android:layout_marginLeft="1dp"
+                android:textSize="17sp"
+                android:background="#00000000"
+                android:layout_toRightOf="@id/user_line"
+                android:text="退出登录"/>
+        </RelativeLayout>
+
+    </RelativeLayout>
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_below="@id/rl_1">
+
+        <Button
+            android:id="@+id/tbc"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="周报"
+            android:layout_marginTop="8dp"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:background="#00000000"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/zhoubao2"
+            android:drawablePadding="10dp"
+            android:paddingLeft="16dp">
+        </Button>
+        <Button
+            android:id="@+id/achi"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="我的成就"
+            android:layout_below="@id/tbc"
+            android:layout_marginTop="8dp"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:background="#00000000"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/chengjiu"
+            android:drawablePadding="10dp"
+            android:paddingLeft="16dp">
+        </Button>
+        <Button
+            android:id="@+id/create"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="创建自习室"
+            android:layout_below="@id/achi"
+            android:layout_marginTop="8dp"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:background="#00000000"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/zixishi"
+            android:drawablePadding="10dp"
+            android:paddingLeft="16dp">
+        </Button>
+        <Button
+            android:id="@+id/join"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="加入自习室"
+            android:layout_below="@id/create"
+            android:layout_marginTop="8dp"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:background="#00000000"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/zhuanzhu"
+            android:drawablePadding="10dp"
+            android:paddingLeft="16dp">
+        </Button>
+        <TextView
+            android:id="@+id/tv_5"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="常见问题"
+            android:layout_below="@id/join"
+            android:layout_marginTop="8dp"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/wenhao"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp">
+        </TextView>
+        <TextView
+            android:id="@+id/tv_6"
+            android:layout_width="match_parent"
+            android:layout_height="32dp"
+            android:text="设置"
+            android:layout_below="@id/tv_5"
+            android:layout_marginTop="8dp"
+            android:textSize="21sp"
+            android:gravity="left"
+            android:textColor="@color/colorBlack"
+            android:drawableLeft="@drawable/set"
+            android:drawablePadding="10dp"
+            android:paddingLeft="18dp">
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>

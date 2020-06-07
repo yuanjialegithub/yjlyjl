@@ -1,0 +1,138 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/relativelayout"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".FocusActivity">
+
+    <com.example.myapplication.MyTree
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </com.example.myapplication.MyTree>
+
+    <RelativeLayout
+        android:id="@+id/frl"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+        <ImageView
+            android:id="@+id/back1"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:background="@drawable/bg1"
+            android:alpha="0.7">
+        </ImageView>
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+        <TextView
+            android:id="@+id/textView1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="3"
+            android:gravity="center"
+            android:textSize="24dp"
+            android:layout_marginTop="160dp"
+            android:text="请设定时间（s）" />
+
+        <EditText
+            android:id="@+id/setTimeEdit"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:ems="5"
+            android:gravity="center"
+            android:inputType="number" >
+            <requestFocus />
+        </EditText>
+        </LinearLayout>
+
+        <Chronometer
+            android:id="@+id/chronometer1"
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_centerVertical="true"
+            android:gravity="center"
+            android:textColor="#000000"
+            android:textSize="60sp" />
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@id/chronometer1">
+
+            <Button
+                android:id="@+id/btnStart"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginLeft="16dp"
+                android:text="开始"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="17sp"/>
+             
+            <Button
+                android:id="@+id/btnPC"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_alignLeft="@id/btnStart"
+                android:text="暂停"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="17sp"/>
+                   
+            <Button
+                android:id="@+id/btnReset"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="重置"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/fbt_2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="退出"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="17sp"/>
+
+            <Button
+                android:id="@+id/fbt_3"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_toLeftOf="@id/fbt_2"
+                android:layout_toStartOf="@id/fbt_2"
+                android:layout_marginRight="20dp"
+                android:background="#00000000"
+                android:textColor="#fff"
+                android:textSize="17sp"
+                android:text="背景音乐"
+                >
+
+            </Button>
+        </LinearLayout>
+        <TextView
+            android:id="@+id/ftv_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="“以蝼蚁之行，展鸿鹄之志。”"
+            android:textSize="22sp"
+            android:textColor="#fff"
+            android:layout_margin="15dp">
+
+        </TextView>
+
+    </RelativeLayout>
+
+</RelativeLayout>
